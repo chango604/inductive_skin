@@ -1,0 +1,40 @@
+{
+  "model": "MLP",
+  "target_set": "F",
+  "targets": [
+    "F"
+  ],
+  "units": {
+    "F": "g"
+  },
+  "params": {
+    "regressor__mlp__alpha": 0.0001,
+    "regressor__mlp__hidden_layer_sizes": [
+      256,
+      256
+    ]
+  },
+  "features": [
+    "dL1",
+    "dL2",
+    "dL3",
+    "dL4",
+    "dL5"
+  ],
+  "input": "per-point median of the hold window (20 samples at 10 Hz)",
+  "dL_definition": "L - median of the hover baseline window of the same point",
+  "F_definition": "force_g - median hover baseline force of the same point (g)",
+  "z_definition": "z_rep - z_surface (negative = into the material)",
+  "test_mae": {
+    "F": 6.897488327782328
+  },
+  "test_mae_single_sample": {
+    "F": 17.420417300822937
+  },
+  "cv_mae_mean_std": {
+    "F": [
+      7.038328614393919,
+      0.2269317363778421
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+# dataset (download from Zenodo into data/)
+data/*
+!data/.gitkeep
+# outputs of the analysis scripts
+results/
+__pycache__/
+*.pyc
+.DS_Store

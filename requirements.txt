@@ -1,0 +1,9 @@
+# analysis
+numpy
+pandas
+matplotlib
+scikit-learn==1.8.0   # version used to train the models in models/
+joblib
+# data collection
+pyserial
+bleak
